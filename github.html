@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="secrect-info"> MY secrect repo</h1>
+    <input id="delete-confirm" type="text" placeholder="Myname is abir">
+    <button id="btn-delete" disabled> Delete</button>
+
+    <script>
+
+document.getElementById('delete-confirm').addEventListener('keyup',function(){
+const text =event.target.value;
+ const deletebutton =document.getElementById('btn-delete');
+ if(text === 'delete'){
+    deletebutton.removeAttribute('disabled');
+ }else{
+deletebutton.setAttribute('disabled',true);
+
+
+ }
+
+})
+
+document.getElementById('btn-delete').addEventListener('click',function(){
+const secrect =document.getElementById('secrect-info')
+secrect.style.display= 'none';
+
+})
+
+//-------------
+//remove ar setAttribute
+    </script>
+</body>
+</html>

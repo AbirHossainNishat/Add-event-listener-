@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> More event</title>
+</head>
+<body>
+    <h1> Explore  more event </h1>
+
+  <button id="btn-more"> Eventd</button>
+  <input  id="text-field" type ="text">
+
+  <script>
+ // document.getElementById('text-field').addEventListener('focus',function(){
+//console.log('event tiggere inside the field');
+
+  //})
+ // document.getElementById('text-field').addEventListener('keydown',function(){
+//console.log(event.target.value );
+// 
+
+//key point keydown,keyup,keypress
+  //})
+  document.getElementById('text-field').addEventListener('keypress',function(){
+console.log(event.target.value );
+
+  })
+  document.getElementById('text-field').addEventListener('keyup',function(){
+console.log(event.target.value );
+
+  })
+  document.getElementById('text-field').addEventListener('keydown',function(){
+console.log(event.target.value );
+
+  })
+  document.getElementById('text-field').addEventListener('blur',function(){
+console.log('event tiggere inside the field blur');
+
+  })
+//document.getElementById('btn-more').addEventListener('mousemove', function(){
+ //console.log('event');
+//}//)
+
+
+//mousemove
+//mouseenter
+  </script>
+</body>
+</html>
